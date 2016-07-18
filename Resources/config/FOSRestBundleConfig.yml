@@ -1,0 +1,22 @@
+fos_rest:
+  body_listener: true
+  format_listener: true
+  routing_loader:
+    default_format: json
+  view:
+    view_response_listener: "force"
+    failed_validation: HTTP_BAD_REQUEST
+    formats:
+      json: true
+    mime_types:
+      json:
+        - 'application/json'
+        - 'application/json;version=1.0'
+  access_denied_listener:
+    json: true
+  exception:
+    codes:
+      'Symfony\Component\Routing\Exception\ResourceNotFoundException': 404
+      'Doctrine\ORM\OptimisticLockException': HTTP_CONFLICT
+    messages:
+      'Symfony\Component\Routing\Exception\ResourceNotFoundException': true

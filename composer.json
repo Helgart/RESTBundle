@@ -1,0 +1,34 @@
+{
+  "name": "helgart/RESTBundle",
+  "type": "symfony-bundle",
+  "description": "Fast REST API implementation for symfony 2 / 3",
+  "keywords": ["REST", "RESTFULL", "API"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michael FORASTE",
+      "email": "michael.foraste@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "symfony/framework-bundle": "~2.3|~3.0",
+    "jms/serializer-bundle": "^1.1",
+    "friendsofsymfony/rest-bundle": "^2.0",
+    "nelmio/cors-bundle": "^1.4"
+  },
+  "require-dev": {
+  },
+  "suggest": {
+    "nelmio/api-doc-bundle": "Generate your API Documentation",
+    "willdurand/hateoas-bundle": "Leverage your API with HATEOAS"
+  },
+  "autoload": {
+    "psr-4": { "Doctrine\\Bundle\\DoctrineBundle\\": "" }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    }
+  }
+}
