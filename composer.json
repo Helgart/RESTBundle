@@ -24,7 +24,7 @@
     "willdurand/hateoas-bundle": "Leverage your API with HATEOAS"
   },
   "autoload": {
-    "psr-4": { "Doctrine\\Bundle\\DoctrineBundle\\": "" }
+    "psr-4": { "helgart\\RESTBundle\\": "" }
   },
   "extra": {
     "branch-alias": {
