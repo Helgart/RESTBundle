@@ -1,5 +1,5 @@
 {
-  "name": "helgart/RESTBundle",
+  "name": "helgart/rest-bundle",
   "type": "symfony-bundle",
   "description": "Fast REST API implementation for symfony 2 / 3",
   "keywords": ["REST", "RESTFULL", "API"],
